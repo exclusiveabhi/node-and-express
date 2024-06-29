@@ -2,7 +2,8 @@ const http = require('http');
 const fs = require('fs');
 
 const file = fs.readFileSync('index.html', 'utf-8');
-const jsonData = fs.readFileSync('dummy.json', 'utf-8');
+const jsonData = JSON.parse(fs.readFileSync('dummy.json', 'utf-8'));
+const products = jsonData.products[0];
 
 const server = http.createServer((req, res) => {
     console.log("Server chal gya bhaiya");
@@ -14,7 +15,7 @@ const server = http.createServer((req, res) => {
 
         case '/api':
             res.setHeader('Content-Type', 'application/json');
-            res.end(jsonData);
+            res.end(JSON.stringify(jsonData));
             break;
 
         default:

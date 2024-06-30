@@ -7,6 +7,7 @@ const products = jsonData.products[0];
 
 const server = http.createServer((req, res) => {
     console.log("Server chal gya bhaiya");
+    //route yaha se define hai
     switch (req.url) {
         case '/':
             res.setHeader('Content-Type', 'text/html');

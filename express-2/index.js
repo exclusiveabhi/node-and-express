@@ -1,4 +1,6 @@
-const express = require('express')
+const express = require('express') //data can be send using three parameter 
+// query, url params, body params.
+const morgan = require('morgan')
 const server = express() 
 //middleware server.use 
 
@@ -16,6 +18,8 @@ server.use((req,res,next)=>{
  console.log(req.get('User-Agent'),req.ip, req.hostname)
  next()
 })
+
+server.use(morgan('default')) //logger that help sever for keeping details
 
 const auth = (req, res ,next)=>{
     if(req.query.password == '1234'){

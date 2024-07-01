@@ -103,6 +103,6 @@ server.use((err, req, res, next) => {
 
 ## Conclusion
 
-This repository covers the basics of Node.js and Express.js. Feel free to explore the examples and modify them to suit your needs. For more information, refer to the official [Node.js documentation](https://nodejs.org/en) and [Express.js documentation](https://expressjs.com/).
+This repository covers the important topic of Node.js and Express.js. Feel free to explore the examples and modify them to suit your needs. For more information, refer to the official [Node.js documentation](https://nodejs.org/en) and [Express.js documentation](https://expressjs.com/).
 
 Happy coding!

@@ -55,19 +55,24 @@ server.get('/', (req, res) => {
 server.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+```
 
 ## Middleware in Express
 
+```javascript
 server.use((req, res, next) => {
     console.log('Middleware executed');
     next();
 });
+```
 
 ## Routing in Express
 
+```javascript
 server.get('/hello', (req, res) => {
     res.send('Hello from the /hello route!');
 });
+```
 
 server.post('/data', (req, res) => {
     res.send('Data received via POST');

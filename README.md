@@ -72,29 +72,34 @@ server.use((req, res, next) => {
 server.get('/hello', (req, res) => {
     res.send('Hello from the /hello route!');
 });
-```
-
 server.post('/data', (req, res) => {
     res.send('Data received via POST');
 });
+```
 
 ## Handling Requests and Response
 
+```javascript
 server.get('/user/:id', (req, res) => {
     const userId = req.params.id;
     res.send(`User ID is ${userId}`);
 });
+```
 
 ## Working with Static Files
 
+```javascript
 server.use(express.static('public'));
+```
 
 ## Error Handling
 
+```javascript
 server.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something went wrong!');
 });
+```
 
 ## Conclusion
 

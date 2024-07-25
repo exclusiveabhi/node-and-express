@@ -1,6 +1,6 @@
 # Node.js and Express.js
 
-Welcome to the Node.js and Express.js repository with code examples!
+Welcome to the Node.js and Express.js repository with code examples !
 
 ## Repository URL
 [GitHub Repository](https://github.com/exclusiveabhi/node-and-express.git)
